@@ -1,0 +1,31 @@
+h2 {
+    font-family: verdana !important;
+}
+
+.A {
+    background-color: #8fd8eb !important;
+    color: #000000 !important;
+    padding-top: 3px !important;
+    padding-left: 3px !important;
+    border-radius: 10px !important;
+}
+
+.divP {
+    width: 480px !important;
+    margin-left: 25% !important;
+    margin-bottom: 1% !important;
+}
+
+#flotante {
+    /*padre*/
+    overflow: hidden !important;
+    width: 50% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 5%;
+}
+
+p {
+    line-height: 1.4 !important;
+    padding-bottom: 10 !important;
+}

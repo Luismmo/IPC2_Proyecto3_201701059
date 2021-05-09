@@ -1,3 +1,22 @@
-{% extends 'application/base.html' %} {% load static %}{% block contenido %}
-<h1>Luis Amilcar Morales Xón</h1>
+{% extends 'application/base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static 'application/css/estilos.css' %}"> {% endblock %} {% block contenido %}
+<div id="flotante" class="divP">
+
+    <div class="A">
+        <h2>Luis Amilcar Morales Xón</h2>
+        <p>
+            <li>Carnet: 201701059</li>
+        </p>
+        <p>
+            <li>almxon@gmail.com</li>
+        </p>
+        <p>
+            <li>IPC2 - Primer semestre 2021</li>
+        </p>
+        <li><a href="https://github.com/Luismmo" target="_blank">Github</a></li>
+    </div>
+
+</div>
+
+</div>
 {% endblock %}
