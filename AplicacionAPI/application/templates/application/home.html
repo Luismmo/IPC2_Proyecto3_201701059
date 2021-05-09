@@ -1,3 +1,40 @@
-{% extends 'application/base.html' %} {% load static %} {% block contenido %}
-<h1>aqui cargo el archivo</h1>
+{% extends 'application/base.html' %} {% load static %}{% block css %}
+<link rel="stylesheet" href="{% static 'application/css/home.css' %}"> {% endblock %} {% block contenido %}
+<div class="h11">
+    <h1>Carga de archivo</h1>
+</div>
+
+<div class="g-2 row textareas">
+    <div class="col-md">
+        <div class="form-floating">
+            <textarea class="form-control textareaaa" placeholder="Vista previa del XML cargado" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Entrada</label>
+        </div>
+    </div>
+
+    <div class="col-md">
+        <div class="form-floating">
+            <textarea class="form-control textareaaa" placeholder="Vista previa del XML cargado" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Salida</label>
+        </div>
+    </div>
+
+</div>
+<div class="contenedorB">
+    <div class="g-2 row">
+        <div class="col-md">
+            <button type="button" class="btn btn-success">Enviar</button>
+        </div>
+        <div class="col-md">
+            <button type="button" class="btn btn-danger">Reset</button>
+        </div>
+    </div>
+</div>
+<div class="labelInput">
+    <div class="mb-3 ">
+        <label for="formFile" class="form-label ">Cargar XML</label>
+        <input class="form-control " type="file" id="formFile">
+    </div>
+</div>
+
 {% endblock %}
